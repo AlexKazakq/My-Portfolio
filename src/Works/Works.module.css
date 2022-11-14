@@ -1,0 +1,28 @@
+.worksBlock {
+    min-height: 100vh;
+    background-color: rgba(37,42,47,0.36);
+}
+
+.title {
+    width: 100%;
+    border: 1px solid;
+    height: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.worksContainer {
+    display: block;
+}
+
+.worksItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.titleText {
+    background-color: #cecece;
+}

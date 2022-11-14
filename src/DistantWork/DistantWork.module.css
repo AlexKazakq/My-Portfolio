@@ -1,0 +1,20 @@
+.distantWork {
+    background-color: #f7f7f7;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    flex-direction: column;
+    border: 1px solid;
+    height: 50%;
+}
+.text {
+    background-color: #cecece;
+    font-size: 30px;
+}
+.button {
+    background-color: #b2b2b2;
+    font-size: 20px;
+}

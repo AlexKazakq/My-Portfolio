@@ -1,0 +1,30 @@
+.footerBlock {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.container {
+    flex-direction: column;
+    height: 60%;
+}
+
+.squares {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    background-color:  #c2c2c2;
+}
+
+.name {
+    background-color: #c2c2c2;
+}
+
+.copyright {
+    background-color: #c2c2c2;
+}
