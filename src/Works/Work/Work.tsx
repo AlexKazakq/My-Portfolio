@@ -11,7 +11,7 @@ export const Work = (props: WorkPropsType) => {
         <div className={s.workBlock}>
             <div className={s.imgBlock}>
                 <img className={s.img}/>
-                <button className={s.button}>Show</button>
+                <a className={s.button}>Show</a>
             </div>
             <div className={s.descriptionBlock}>
                 <h3 className={s.title}>{props.title}</h3>

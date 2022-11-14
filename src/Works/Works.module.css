@@ -6,10 +6,11 @@
 .title {
     width: 100%;
     border: 1px solid;
-    height: 150px;
+    min-height: 100px;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
+    box-sizing: border-box;
 }
 
 .worksContainer {
@@ -21,6 +22,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid;
+
 }
 
 .titleText {

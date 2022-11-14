@@ -1,6 +1,6 @@
 .distantWork {
     background-color: #f7f7f7;
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
 .container {
     flex-direction: column;
     border: 1px solid;
-    height: 50%;
+    min-height: 150px;
 }
 .text {
     background-color: #cecece;

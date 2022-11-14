@@ -4,7 +4,7 @@
 }
 
 .imgBlock {
-    width: 300px;
+    width: 100%;
     height: 200px;
     background-color: #f7f7f7;
     display: flex;
@@ -16,17 +16,18 @@
     width: 100px;
     margin: 0 auto;
     background-color: #5d5c5c;
+    text-align: center;
 }
 
 .title {
     background-color: gray;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .description {
     background-color: gray;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 

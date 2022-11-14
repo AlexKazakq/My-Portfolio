@@ -1,11 +1,11 @@
 .footerBlock {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
 }
 .container {
     flex-direction: column;
-    height: 60%;
+    min-height: 200px;
 }
 
 .squares {
