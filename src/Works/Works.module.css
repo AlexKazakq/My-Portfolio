@@ -1,6 +1,8 @@
 .worksBlock {
     min-height: 100vh;
     background-color: rgba(37,42,47,0.36);
+    display: flex;
+    align-items: center;
 }
 
 .title {
