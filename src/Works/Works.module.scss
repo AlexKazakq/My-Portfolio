@@ -1,0 +1,25 @@
+@import "../common/styles/sass/variables";
+
+.worksBlock {
+  background-color: $bgColor;
+  display: flex;
+  align-items: center;
+
+  .worksContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .worksItem {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      align-items: flex-start;
+      @media screen and (max-width: 1254px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+

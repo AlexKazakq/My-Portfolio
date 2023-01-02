@@ -1,0 +1,70 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.workBlock {
+  width: 500px;
+  background-color: $bgSecondaryColor;
+  margin-bottom: 50px;
+
+  .imgBlock {
+    width: 100%;
+    height: 300px;
+    background-color: $imgBgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $bgColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+    }
+
+    .button {
+      width: 100px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
+
+  .descriptionBlock {
+    padding: 25px 20px;
+
+    .title {
+      margin-bottom: 0;
+      margin-top: 10px;
+      padding: 0 20px;
+      width: content-box;
+      font-weight: 500;
+      @include text($titleFontFamily, 24px, 32px);
+    }
+
+    .description {
+      margin-top: 10px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      margin-bottom: 22px;
+      @include text($textFontFamily, 12px, 28px);
+    }
+  }
+}
+
+
+
+
+
+
+
+

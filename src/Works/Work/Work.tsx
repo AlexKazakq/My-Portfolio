@@ -1,17 +1,20 @@
 import React from "react";
-import s from './Work.module.css'
+import s from './Work.module.scss'
 
 type WorkPropsType = {
     title: string
     description: string
+    style: StylePropsType
+}
+type StylePropsType = {
+    backgroundImage: string
 }
 
 export const Work = (props: WorkPropsType) => {
     return (
         <div className={s.workBlock}>
-            <div className={s.imgBlock}>
-                <img className={s.img}/>
-                <a className={s.button}>Show</a>
+            <div style={props.style} className={s.imgBlock}>
+                <a href={'#'} className={s.button}>Show</a>
             </div>
             <div className={s.descriptionBlock}>
                 <h3 className={s.title}>{props.title}</h3>

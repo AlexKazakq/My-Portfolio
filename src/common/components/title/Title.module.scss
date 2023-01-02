@@ -1,0 +1,37 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+.title {
+  margin: 40px;
+  @include text($titleFontFamily,32px, 62px);
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  @media screen and (max-width: 994px) {
+    @include text($titleFontFamily, 28px, 58px);
+  }
+  @media screen and (max-width: 882px) {
+    @include text($titleFontFamily, 24px, 50px);
+  }
+  @media screen and (max-width: 770px) {
+    @include text($titleFontFamily, 20px, 42px);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: $primaryColor;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  h2 {
+    margin: 0;
+  }
+}
+
+
+
+

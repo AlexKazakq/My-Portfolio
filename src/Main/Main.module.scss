@@ -1,0 +1,33 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.mainBlock {
+    background-color: $bgColor;
+    display: flex;
+    align-items: center;
+    .mainContainer {
+        justify-content: space-between;
+        @media screen and (max-width: 777px) {
+            justify-content: center;
+        }
+        .text {
+            width: 300px;
+            @include text($textFontFamily, 16px, 28px);
+            .title {
+                line-height: 42px;
+                color: $primaryColor;
+            }
+        }
+        .photo {
+            width: 322px;
+            height: 483px;
+            background-color: $bgSecondaryColor;
+            box-sizing: border-box;
+            margin: 60px 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
