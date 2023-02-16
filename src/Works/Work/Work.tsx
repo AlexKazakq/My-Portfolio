@@ -1,5 +1,6 @@
 import React from "react";
 import s from './Work.module.scss'
+import {Button} from "../../common/components/Button/Button";
 
 type WorkPropsType = {
     title: string
@@ -14,7 +15,7 @@ export const Work = (props: WorkPropsType) => {
     return (
         <div className={s.workBlock}>
             <div style={props.style} className={s.imgBlock}>
-                <a href={'#'} className={s.button}>Show</a>
+                <Button title={'Show'}/>
             </div>
             <div className={s.descriptionBlock}>
                 <h3 className={s.title}>{props.title}</h3>

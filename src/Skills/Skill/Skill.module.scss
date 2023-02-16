@@ -4,25 +4,29 @@
 
 .skill {
     width: 250px;
-    background-color: $bgColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: $bgSecondaryColor;
+    @include flex(column, normal, center, nowrap);
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    .icon {
-        height: 60px;
+    .iconBlock {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: rotate(45deg);
         width: 60px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        height: 60px;
+        @include flex(row, center, center, nowrap);
+        .icon {
+            transform: rotate(-45deg);
+            height: 40px;
+            width: 40px;
+            @include bgSettings();
+        }
     }
     .description {
         text-align: center;
-        @include text($textFontFamily, 16px, 24px)
+        @include text($textFontFamily, 16px, 24px, 400)
     }
     .title {
-        @include text($titleFontFamily, 24px, 24px)
+        @include text($titleFontFamily, 24px, 24px, 400)
     }
 }

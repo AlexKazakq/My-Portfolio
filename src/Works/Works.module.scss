@@ -1,23 +1,19 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .worksBlock {
   background-color: $bgColor;
-  display: flex;
-  align-items: center;
+  @include flex(row, normal, center, nowrap);
 
   .worksContainer {
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+    @include container();
+    @include flex(column, space-between, center, wrap);
 
     .worksItem {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      @include flex(row, space-between, flex-start, wrap);
       width: 100%;
-      align-items: flex-start;
       @media screen and (max-width: 1254px) {
-        justify-content: center;
+        @include flex(row, center, flex-start, wrap);
       }
     }
   }

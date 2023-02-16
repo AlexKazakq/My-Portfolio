@@ -1,19 +1,14 @@
 import React from "react";
-import styleContainer from "../common/styles/Container.module.css"
 import s from "./Footer.module.scss"
-import {Title} from "../common/components/title/Title";
+import {Title} from "../common/components/Title/Title";
+import {SocialIcons} from "../assets/image/socialIconsSVGR/SocialIcons";
 
 export const Footer = () => {
     return (
         <div className={s.footerBlock}>
-            <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <Title text={'Alexandr Kazakov'}/>
-                <div className={s.socialIcons}>
-                    <div className={s.socialIcon}></div>
-                    <div className={s.socialIcon}></div>
-                    <div className={s.socialIcon}></div>
-                    <div className={s.socialIcon}></div>
-                </div>
+            <div className={s.footerContainer}>
+                <Title text={"Alexandr Kazakov"}/>
+                <SocialIcons/>
                 <span className={s.copyright}>© 2022 All rights reserved</span>
             </div>
         </div>

@@ -6,10 +6,13 @@
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
-    & a {
-        @include text($titleFontFamily, 16px, 12px);
+    .link {
+        @include text($titleFontFamily, 16px, 12px, 400);
         color: $primaryColor;
         text-decoration: none;
+        &:hover {
+            font-weight: 700;
+        }
     }
 
 }

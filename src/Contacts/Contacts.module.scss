@@ -1,48 +1,78 @@
 @import "../common/styles/sass/variables";
+@import '../common/components/Button/Button.module';
 
 .contactsBlock {
-    background-color: $bgColor;
-    display: flex;
-    align-items: center;
-    .contactsContainer {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        .title {
-            background-color: #cecece;
-            font-size: 30px;
-        }
-        .form {
-            margin-bottom: 40px;
-            width: 50%;
-            height: 60%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            @media screen and (max-width: 700px) {
-                width: 100%;
-            }
-            & input {
-                height: 25px;
-                background-color:  $bgSecondaryColor;
-                margin-bottom: 15px;
-                border: 1px $bgColor;
-                color: $primaryColor;
-            }
-            & textarea {
-                height: 100px;
-                background-color:$bgSecondaryColor;
-                margin-bottom: 15px;
-                border: 1px $bgColor;
-                color: $primaryColor;
-            }
-        }
-        .button {
-            background-color: $bgSecondaryColor;
-            font-size: 20px;
-            color: $primaryColor;
-            border: 1px $bgColor;
-            font-family: $textFontFamily;
-        }
+  background-color: $bgColor;
+  @include flex(row, normal, center, nowrap);
+
+  .contactsContainer {
+    @include container();
+    @include flex(column, center, center, nowrap);
+
+    .title {
+      background-color: #cecece;
+      font-size: 30px;
     }
+
+    .form {
+      margin-bottom: 40px;
+      width: 50%;
+      height: 60%;
+      @include flex(column, space-between, normal, nowrap);
+      text-align: center;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
+
+      .formArea,
+      .messageArea {
+        background-color: $bgSecondaryColor;
+        border: 1px solid $bgColor;
+        box-sizing: border-box;
+        @include text(inherit, 12px, 1.5, 400);
+        outline: none;
+        color: $primaryColor;
+        margin-bottom: 1.2rem;
+
+        &:-webkit-autofill {
+          border: 1px solid $bgColor;
+          -webkit-text-fill-color: #ff014f;
+          -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+          transition: background-color 5000s ease-in-out 0s;
+
+          &:focus {
+            border: 2px solid $bgSecondaryColor;
+          }
+        }
+      }
+
+      .formArea {
+        padding: .4rem 15px;
+        height: calc(1.5em + .75rem + 2px);
+
+        &:focus {
+          border: 1px solid transparent;
+          transition: all 0.4s ease-in-out 0s;
+        }
+      }
+
+      .messageArea {
+        min-height: 160px;
+        padding: 15px;
+        resize: none;
+
+        &:focus {
+          border: 1px solid transparent;
+          transition: all 0.4s ease-in-out 0s;
+        }
+      }
+
+      button[type='submit'] {
+        @extend .button;
+        align-self: center;
+        background-color: transparent;
+        margin-top: 30px;
+      }
+    }
+  }
 }

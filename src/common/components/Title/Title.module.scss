@@ -2,19 +2,18 @@
 @import "../../styles/sass/mixins";
 
 .title {
-  margin: 40px;
-  @include text($titleFontFamily,32px, 62px);
+  margin: 40px 0;
+  @include text($titleFontFamily,32px, 62px, 600);
   text-transform: capitalize;
-  font-weight: 600;
   position: relative;
   @media screen and (max-width: 994px) {
-    @include text($titleFontFamily, 28px, 58px);
+    @include text($titleFontFamily, 28px, 58px, 400);
   }
   @media screen and (max-width: 882px) {
-    @include text($titleFontFamily, 24px, 50px);
+    @include text($titleFontFamily, 24px, 50px, 400);
   }
   @media screen and (max-width: 770px) {
-    @include text($titleFontFamily, 20px, 42px);
+    @include text($titleFontFamily, 20px, 42px, 400);
   }
 
   &::before {

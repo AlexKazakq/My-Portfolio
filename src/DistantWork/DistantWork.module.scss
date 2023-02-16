@@ -1,20 +1,15 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .distantWork {
     background-color: $bgSecondaryColor;
     min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center, normal, nowrap);
     .container {
-        flex-direction: column;
+        @include container();
+        @include flex(column, normal, center, wrap);
         min-height: 150px;
-        .button {
-            font-size: 30px;
-            color: $primaryColor;
-            text-decoration: none;
-            font-family: $textFontFamily;
-        }
+        margin-bottom: 10px;
     }
 }
 
