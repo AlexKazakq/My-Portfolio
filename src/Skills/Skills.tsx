@@ -6,6 +6,8 @@ import jsLogo from "../assets/image/skill-icons/js.svg"
 import cssLogo from "../assets/image/skill-icons/css.svg"
 import reactLogo from "../assets/image/skill-icons/react.svg"
 
+const Fade = require("react-reveal/Fade");
+
 export const Skills = () => {
 
     const js = {
@@ -20,30 +22,32 @@ export const Skills = () => {
 
 
     return (
-        <div className={s.skillsBlock}>
-            <div className={s.skillsContainer}>
-                <Title text={"My skills"}/>
-                <div className={s.skills}>
-                    <Skill
-                        style={js}
-                        title={"JavaScript"}
-                        description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et laudantium nostrum tempora! Aperiam at blanditiis,"}
-                    />
+        <div id={'skills'} className={s.skillsBlock}>
+            <Fade>
+                <div className={s.skillsContainer}>
+                    <Title text={"My skills"}/>
+                    <div className={s.skills}>
+                        <Fade left><Skill
+                            style={js}
+                            title={"JavaScript"}
+                            description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et laudantium nostrum tempora! Aperiam at blanditiis,"}
+                        /></Fade>
 
-                    <Skill
-                        style={css}
-                        title={"CSS"}
-                        description={"dolores ducimus iste nam nemo neque nisi non officiis quis quod reiciendis, rem sint suscipit ullam vel voluptatum?"}
-                    />
+                        <Fade><Skill
+                            style={css}
+                            title={"CSS"}
+                            description={"dolores ducimus iste nam nemo neque nisi non officiis quis quod reiciendis, rem sint suscipit ullam vel voluptatum?"}
+                        /></Fade>
 
-                    <Skill
-                        style={react}
-                        title={"React"}
-                        description={"Aliquid omnis possimus quos. Adipisci animi aperiam consequuntur cumque facere nihil, quae quod soluta sunt tempora"}
-                    />
+                        <Fade right><Skill
+                            style={react}
+                            title={"React"}
+                            description={"Aliquid omnis possimus quos. Adipisci animi aperiam consequuntur cumque facere nihil, quae quod soluta sunt tempora"}
+                        /></Fade>
 
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     )
         ;

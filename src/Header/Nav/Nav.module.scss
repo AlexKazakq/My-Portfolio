@@ -2,17 +2,23 @@
 @import "../../common/styles/sass/variables";
 
 .nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+    width: 340px;
+    @include flex(row, space-between, center, nowrap);
     margin-right: 50px;
-    .link {
+    a {
         @include text($titleFontFamily, 16px, 12px, 400);
-        color: $primaryColor;
+        color: $textColor;
         text-decoration: none;
         &:hover {
             font-weight: 700;
+            color: $primaryColor;
         }
     }
-
+    .active {
+        font-weight: 700;
+        color: $primaryColor;
+    }
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
 }

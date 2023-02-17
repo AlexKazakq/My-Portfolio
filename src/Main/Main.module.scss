@@ -3,9 +3,8 @@
 
 .mainBlock {
     position: relative;
-    background-color: $bgColor;
     @include flex(row, center, center, nowrap);
-    padding: 60px 0;
+    padding: 140px 0;
     .mainContainer {
         @include container();
         @include flex(row, space-between, center, wrap);

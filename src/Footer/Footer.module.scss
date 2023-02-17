@@ -3,7 +3,6 @@
 
 .footerBlock {
     @include flex(row, normal, center, nowrap);
-    background-color: $bgSecondaryColor;
     .footerContainer {
         @include container();
         @include flex(column, normal, center, nowrap);

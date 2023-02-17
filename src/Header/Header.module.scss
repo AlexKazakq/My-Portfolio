@@ -1,11 +1,13 @@
 @import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
 
 .header {
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.9;
+    width: 100%;
     min-height: 80px;
-    background-color: $bgSecondaryColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, flex-end, center, nowrap);
     .logoImg {
         width: 60px;
         height: 70px;

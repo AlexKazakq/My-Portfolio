@@ -2,7 +2,6 @@
 @import "../common/styles/sass/mixins";
 
 .worksBlock {
-  background-color: $bgColor;
   @include flex(row, normal, center, nowrap);
 
   .worksContainer {

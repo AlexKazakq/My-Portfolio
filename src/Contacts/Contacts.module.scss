@@ -2,7 +2,6 @@
 @import '../common/components/Button/Button.module';
 
 .contactsBlock {
-  background-color: $bgColor;
   @include flex(row, normal, center, nowrap);
 
   .contactsContainer {

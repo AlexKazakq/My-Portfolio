@@ -2,9 +2,7 @@
 @import "../common/styles/sass/mixins";
 
 .skillsBlock {
-    background-color: $bgSecondaryColor;
-    display: flex;
-    align-items: center;
+    @include flex(row, center, center, nowrap);
     .skillsContainer {
         @include container();
         @include flex(column, flex-start, center, wrap)

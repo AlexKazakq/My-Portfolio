@@ -2,7 +2,6 @@
 @import "../common/styles/sass/mixins";
 
 .distantWork {
-    background-color: $bgSecondaryColor;
     min-height: 30vh;
     @include flex(column, center, normal, nowrap);
     .container {
