@@ -11,16 +11,16 @@ export const SocialIcons = () => {
             <div className={s.socialIcons}>
 
                     <div className={s.socialIcon}>
-                        <Fade direction={'left'}> <a href={"#"}><CodeWarsSVGR/></a></Fade>
+                        <Fade direction={'left'}> <a href={"https://www.codewars.com/users/AlexKazakqq"}><CodeWarsSVGR/></a></Fade>
                     </div>
                     <div className={s.socialIcon}>
-                        <Fade direction={"left"}><a href={"#"}><GitHubSVGR/></a></Fade>
+                        <Fade direction={"left"}><a href={"https://github.com/AlexKazakq"}><GitHubSVGR/></a></Fade>
                     </div>
                     <div className={s.socialIcon}>
-                        <Fade direction={'right'}><a href={"#"}><LinkedInSVGR/></a></Fade>
+                        <Fade direction={'right'}><a href={"https://www.linkedin.com/in/alexandr-kazakov-393403260/"}><LinkedInSVGR/></a></Fade>
                     </div>
                     <div className={s.socialIcon}>
-                        <Fade direction={'right'}><a href={"#"}><TelegramSVGR/></a></Fade>
+                        <Fade direction={'right'}><a href={"https://t.me/alexkazakq"}><TelegramSVGR/></a></Fade>
                     </div>
             </div>
     );
