@@ -18,7 +18,7 @@ export const Contacts = () => {
         onSubmit: async values => {
             setIsSending(true)
             await axios.post('https://gmail-from-portfolio.vercel.app/sendMessage', {name: values.name, email: values.email, message: values.message})
-            alert('Your message is send')
+            alert('Your message has been send')
             setIsSending(false)
             formik.resetForm()
         },
