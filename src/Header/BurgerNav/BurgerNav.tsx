@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import s from "./BurgerNav.module.scss"
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
 export const BurgerNav = () => {
     let [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -46,7 +46,9 @@ export const BurgerNav = () => {
                     duration={500}
                 >Contacts</Link>
             </div>
-            <div onClick={onBurgerBtnClick} className={s.burgerBtn}></div>
+            <div onClick={onBurgerBtnClick} className={ menuIsOpen? `${s.burgerBtn} ${s.show}` : s.burgerBtn}>
+                <span></span>
+            </div>
         </div>
     );
 };
